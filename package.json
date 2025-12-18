@@ -1,0 +1,30 @@
+{
+  "name": "ai-agent-session-key-demo",
+  "version": "1.0.0",
+  "description": "AI Agent Session Key Demo using Pure EIP-7702 (No ERC-4337)",
+  "type": "module",
+  "scripts": {
+    "demo": "tsx src/demo.ts",
+    "check": "tsx scripts/check-balance.ts",
+    "typecheck": "tsc --noEmit",
+    "deploy:contract": "cd contracts && forge script script/Deploy.s.sol --rpc-url $RPC_URL --broadcast --verify",
+    "test:contract": "cd contracts && forge test"
+  },
+  "keywords": [
+    "eip-7702",
+    "session-keys",
+    "ai-agent",
+    "ethereum",
+    "smart-account"
+  ],
+  "dependencies": {
+    "viem": "^2.21.0",
+    "dotenv": "^16.4.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.0",
+    "tsx": "^4.19.0",
+    "@types/node": "^22.0.0"
+  }
+}
+
